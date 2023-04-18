@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() 
+
+{
+	float distancia, combustivel, media;
+	
+	scanf("%f", &distancia);
+	scanf("%f", &combustivel);
+	
+	media = distancia / combustivel;
+
+	printf("%.3f km/l\n", media);
+
+	return 0;
+}
