@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+
+{
+    char nome[50];
+ salario_fixo duplo, total_vendas, salario_final;
+
+    scanf("%[^\n]", nome);
+    scanf("%lf %lf", &salario_fixo, &total_vendas);
+
+ salario_final = salario_fixo + (total_vendas * 0,15);
+
+    printf("TOTAL = R$ %.2lf\n", salario_final);
+
+ retorno 0;
+}
