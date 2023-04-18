@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 int main ()
+	
 {
-	float a, b, c;
-	float area_triangulo, area_circulo, area_trapezio, area_quadrado, area_retangulo;
+     float a, b, c;
+     float area_triangulo, area_circulo, area_trapezio, area_quadrado, area_retangulo;
 	
 		scanf("%f", &a);
 		scanf("%f", &b);
 		scanf("%f", &c);
 		
-	area_triangulo = (a * c) /2; 
+    area_triangulo = (a * c) /2; 
 	
     area_circulo =  c * c * 3.14159;
 
