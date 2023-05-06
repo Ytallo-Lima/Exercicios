@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+
+{
+  
+  
+  float altura, maiorAltura = 0, menorAltura = 1000, mediaAlturaMulheres = 0;
+  int i, numHomens = 0, numMulheres = 0;
+  char sexo;
+
+	for( i = 1; i <= 3; i++) 
+  	
+	  {
+	    printf("Digite a altura da pessoa %d: ", i);
+	    scanf("%f", &altura);
+	
+	    printf("Digite o sexo da pessoa %d (M/F): ", i);
+	    scanf(" %c", &sexo);
+
+    if (altura > maiorAltura) 
+	{
+      	maiorAltura = altura;
+    }
+
+    if (altura < menorAltura) 
+	{
+      menorAltura = altura;
+    }
+
+    if (sexo == 'M') 
+	{
+      numHomens++;
+    } else if (sexo == 'F') 
+	{
+      numMulheres++;
+      mediaAlturaMulheres += altura;
+    }
+  }
+
+  printf("\nMaior altura do grupo: %.2f\n", maiorAltura);
+  printf("Menor altura do grupo: %.2f\n", menorAltura);
+
+  if (numMulheres > 0)
+  
+  {
+    mediaAlturaMulheres /= numMulheres;
+    printf("Média da altura das mulheres: %.2f\n", mediaAlturaMulheres);
+  }
+   else 
+  {
+    printf("Não há mulheres no grupo.\n");
+  }
+
+  printf("Número de homens: %d\n", numHomens);
+
+  return 0;
+}
